@@ -6,3 +6,8 @@ git add .
 git commit -m "longestPalindrome complete"
 git push origin master
 git branch alternative master
+optimized my longest palindrome function to use fewer loops.
+git status - to check my active branch
+git add .
+git commit -m "optimized longestPalindrome.js"
+git push origin alternative
