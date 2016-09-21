@@ -38,14 +38,22 @@ function longestPalindrome(str) {
         palindrome = temp;
       }
     }
-    if (a$[i-1] == a$[i]) {
-      var temp = explodeOut(a$,(i-1),(i));
+  }
+
+  //
+  // Look for case b) after--
+
+  var b$ = str.split("");
+
+  // start 1 char in, end 1 char early
+  for (var i= 1; i<b$.length-1; i++) {
+    if (b$[i] == b$[i+1]) {
+      var temp = explodeOut(b$,(i),(i+1));
       if (temp.length > palindrome.length) {
         palindrome = temp;
       }
     }
   }
-
   return(palindrome);
 }
 

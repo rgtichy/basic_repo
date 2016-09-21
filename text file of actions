@@ -1,0 +1,8 @@
+git init
+git add .
+git remote add origin https://github.com/rgtichy/basic_repo.git
+I wrote my function "longest palindrome.js"
+git add .
+git commit -m "longestPalindrome complete"
+git push origin master
+git branch alternative master
